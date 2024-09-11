@@ -29,6 +29,9 @@ jobs:
           distribution: 'zulu'
           java-version: '8'
 
+      - name: Permission
+        run: chmod +x ./gradlew
+
       - name: Download dependencies
         run: ./gradlew build --refresh-dependencies
 
